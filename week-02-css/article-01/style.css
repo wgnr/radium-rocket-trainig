@@ -1,0 +1,290 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* HEADER */
+.giz-container {
+  width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.giz-header {
+  height: 84px;
+  display: flex;
+  align-items: center;
+}
+
+.giz-logo {
+  height: 30px;
+  width: 152px;
+}
+
+.giz-text {
+  line-height: 31px;
+  max-height: 30px;
+  padding-left: 16px;
+  margin-left: 16px;
+  border-left: 1px solid rgb(204, 204, 204);
+  color: rgb(102, 102, 102);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: ProximaNovaCond, sans-serif;
+}
+
+.giz-actions {
+  width: 240px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.giz-actions .login {
+  font-family: "ProximaNovaCond", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+  margin: 0px;
+  background-position: center center;
+  background-size: cover;
+  background-color: rgb(0, 117, 178);
+  color: #fff;
+  fill: currentColor
+}
+
+.shop {
+  font-family: "ProximaNovaCond", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  margin-left: 8px;
+
+  /* margin-right: 8px; */
+}
+
+.shop::after {
+  content: "";
+  width: 1px;
+  height: 30px;
+  margin-left: 16px;
+  border: 1px solid rgb(204, 204, 204);;
+
+}
+
+.go-chart {
+  display: flex;
+  align-items: center;
+}
+
+header {
+  margin-bottom: 29px;
+  border-bottom: 1px solid rgb(229, 229, 229);
+}
+
+header nav {
+  width: 1300px;
+  margin: 0 auto 24px auto;
+  text-align: left;
+
+
+}
+
+
+
+header ul {
+  display: flex;
+}
+
+header li {
+  list-style: none;
+  margin-right: 8px;
+  padding: 0px 6px;
+
+  font-family: "ProximaNovaCond", sans-serif;
+  font-style: normal;
+
+  font-size: 14px;
+  font-weight: bold;
+  height: 21px;
+  line-height: 22px;
+  letter-spacing: 1.27px;
+}
+
+header li:first-child {
+  padding-left: 0px;
+}
+
+header nav .selected {
+  font-size: 14px;
+  /* font-weight: bold; */
+  height: 21px;
+  line-height: 22px;
+  letter-spacing: 1.27px;
+
+  color: #FFF;
+
+  padding: 0px 6px;
+  margin-right: 8px;
+  background: rgb(0, 117, 178);
+}
+
+header a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 14px;
+  height: 21px;
+  line-height: 22px;
+  letter-spacing: 1.27px;
+  font-family: "ProximaNovaCond", sans-serif;
+  font-style: normal;
+}
+
+
+/* BODY */
+.container {
+  width: 800px;
+  margin: 0 auto;
+
+}
+
+.current-section {
+  font-family: ProximaNovaCond, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: rgb(0, 117, 178);
+}
+
+h1 {
+  width: 1067px;
+  font-size: 52px;
+  line-height: 64px;
+  color: #000;
+  font-family: ProximaNovaCond, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+
+  margin-top: 10px;
+  margin-bottom: 16px;
+}
+
+.article-meta {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 24px;
+
+
+}
+
+.social-actions {
+  display: flex;
+}
+
+.action-color {
+  color: rgb(0, 117, 178);
+  fill: currentcolor;
+  font-family: "ProximaNovaCond", sans-serif;
+  padding: 11.5px;
+  width: 18px;
+  height: 18px;
+
+  border-radius: 3px;
+  border: 1px solid rgb(204, 204, 204);
+  display: grid;
+  grid-auto-flow: column;
+  gap: 1px;
+}
+
+.author {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.author>.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: unset;
+
+  margin-right: 10px;
+}
+
+.author-detail {
+  display: flex;
+  flex-direction: column;
+}
+
+.author-name {
+  font-family: ProximaNovaCond, sans-serif;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: left;
+  color: #222;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.author-date {
+  color: rgb(125, 125, 125);
+  font-family: ProximaNovaCond, sans-serif;
+  font-size: 16px;
+
+}
+
+
+main img {
+  width: 800px;
+}
+
+figcaption {
+  margin-top: 0.5rem;
+  font-family: ProximaNovaCond, sans-serif;
+  font-size: 15px;
+  line-height: 21px;
+  color: rgb(125, 125, 125);
+  /* text-align: left; */
+  font-style: normal;
+  font-weight: normal;
+}
+
+picture+p {
+  margin-top: 24px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 29px;
+  font-family: ElizabethSerif, Georgia, serif;
+  font-weight: normal;
+  font-style: normal;
+  color: #222;
+  width: 636px;
+  /* text-rendering: optimizeLegibility; */
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.25rem;
+}
+
+p a {
+  color: rgb(34, 34, 34);
+  box-shadow: rgb(0, 117, 178) 0px -2px 0px inset;
+  text-decoration: none;
+}
