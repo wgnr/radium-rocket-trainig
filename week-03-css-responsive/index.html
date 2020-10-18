@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Juan Wagner">
+  <meta name="description" content="Responsive website for a Newspaper">
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="./CSS/normalize.css">
+  <link rel="stylesheet" href="./CSS/style.css">
+
+  <title>Newspaper's Name</title>
+</head>
+
+<body>
+  <header class="container flex-header">
+    <nav>
+      <div class="icons hamburger"></div>
+      <ul class="section-list">
+        <li><a href="#">Section A</a></li>
+        <li><a href="#">Section B</a></li>
+        <li><a href="#">Section C</a></li>
+        <li><a href="#">Section D</a></li>
+        <li><a href="#">Section E</a></li>
+      </ul>
+    </nav>
+    <span class="newspaper-name">Newspaper's Name</span>
+    <div class="icons magnifying-lens"></div>
+    <div class="weather-time">
+      Fecha: <time datetime="2020-10-21 18:30">21 de Octubre del 2020</time>
+    </div>
+  </header>
+
+  <div class="container">
+    <main class="flex-body">
+      <article class="news primary">
+        <div>
+          <h1>
+            ‘This Is a War’: Cross-Border Fight Over Water Erupts in Mexico
+          </h1>
+          <p>
+            Farmers in Mexico ambushed soldiers and seized a dam to stop water payments to the United States, in a sign
+            of
+            growing conflict over increasingly scarce resources.
+          </p>
+        </div>
+        <img class="image"
+          src="https://static01.nyt.com/images/2020/10/12/world/00mexico-water-top/merlin_178111344_3bc032aa-2835-4c2a-a853-0a0a9f35d507-articleLarge.jpg?quality=75&auto=webp&disable=upscale"
+          alt="A dam in the border between Mexico and USA.">
+      </article>
+      <article class="news secondary">
+        <div>
+          <h2>
+            In Election, Bolivia Confronts Legacy of Ousted Socialist Leader
+          </h2>
+          <p>
+            Sunday’s election is seen as a referendum on Evo Morales, who lifted many out of poverty in his 14 years as
+            president, but whose policies and tone divided the country.
+          </p>
+        </div>
+        <img class="image"
+          src="https://static01.nyt.com/images/2020/10/18/world/18bolivia-add1/merlin_178712517_1cf85f07-6a7e-45da-900c-41f9513eb105-superJumbo.jpg?quality=90&auto=webp"
+          alt="The Vancouver mansion where Yuan Gang was killed by Zhao Li in 2015.">
+      </article>
+      <article class="news secondary">
+        <div>
+          <h2>
+            Who Was ‘El Padrino,’ Godfather to Drug Cartel? Mexico’s Defense Chief, U.S. Says
+          </h2>
+          <p>
+            Drug enforcement agents had long tried to solve the mystery of “El Padrino,” a shadowy, powerful force.
+            They’ve now identified him as Salvador Cienfuegos, Mexico’s defense chief from 2012 to 2018.
+          </p>
+        </div>
+        <img class="image"
+          src="https://static01.nyt.com/images/2020/10/16/world/16mexico-1-sub/merlin_178626045_0021eba7-6448-4a6c-8991-6a7d2036e0a3-jumbo.jpg?quality=90&auto=webp"
+          alt="Salvador Cienfuegos of Mexico saluting soldiers at a military camp in Mexico City in 2016">
+      </article>
+      <article class="news secondary">
+        <div>
+          <h2>
+            He Dismembered His Boss, but a Judge Ruled It Manslaughter
+          </h2>
+          <p>
+            A New York Times reporter and true crime author reflects on one of the strangest crimes that he’s
+            encountered in Canada.
+          </p>
+        </div>
+        <img class="image"
+          src="https://static01.nyt.com/images/2020/10/16/world/16canadaletter-1/merlin_148031502_fead7146-ef76-41f6-948b-cf43fc2e6195-jumbo.jpg?quality=90&auto=webp"
+          alt="The mantion were the crime took place">
+      </article>
+      <article class="news secondary">
+        <div>
+          <h2>
+            How Many Plants Have We Wiped Out? Here Are 5 Extinction Stories
+          </h2>
+          <p>
+            Botanists have laid out evidence that dozens of North American trees, herbs, plants and shrubs have gone
+            extinct since European settlers arrived.
+          </p>
+        </div>
+        <img class="image"
+          src="https://static01.nyt.com/images/2020/10/20/science/00SCI-PLANTEXTINCTION-franklinia2/00SCI-PLANTEXTINCTION-franklinia2-superJumbo.jpg?quality=90&auto=webp"
+          alt="The Franklinia tree, discovered by John Bartram">
+      </article>
+      <article class="news secondary">
+        <div>
+          <h2>
+            Canadian Soldiers Cry Wolf, Alarming Residents
+          </h2>
+          <p>
+            They also mounted speakers that broadcast growling in the woods of Nova Scotia. It was all part of a
+            psychological training exercise.
+          </p>
+        </div>
+        <img class="image"
+          src="https://static01.nyt.com/images/2020/10/15/multimedia/15xp-wolves-pix/merlin_178584123_6ddc04da-c156-46ff-8ad3-cd40be765808-jumbo.jpg?quality=90&auto=webp"
+          alt="Two wolfs">
+      </article>
+      <article class="news secondary">
+        <div>
+          <h2>
+            Mexico’s Former Defense Minister Is Arrested in Los Angeles
+          </h2>
+          <p>
+            Gen. Salvador Cienfuegos Zepeda, who was detained at the airport, is the first high-ranking Mexican military
+            official to be taken into custody in the U.S. in connection with drug-related corruption.
+          </p>
+        </div>
+        <img class="image"
+          src="https://static01.nyt.com/images/2020/10/16/world/16mexico-dea/merlin_178600161_567d00be-20fa-4b2c-9c3a-22ffd5e7690e-jumbo.jpg?quality=90&auto=webp"
+          alt="Gen. Salvador Cienfuegos Zepeda speaking at a reception in Mexico City in 2014">
+      </article>
+    </main>
+  </div>
+  <div class="container">
+    <footer>
+      <span class="copyright">
+        &copy;2020 Newspaper's Name
+      </span>
+      <nav>
+        <ul class="section-list">
+          <li><a href="#">Section A</a></li>
+          <li><a href="#">Section B</a></li>
+          <li><a href="#">Section C</a></li>
+          <li><a href="#">Section D</a></li>
+          <li><a href="#">Section E</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </div>
+</body>
+
+</html>
