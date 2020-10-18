@@ -69,8 +69,6 @@
   font-style: normal;
   font-weight: normal;
   margin-left: 8px;
-
-  /* margin-right: 8px; */
 }
 
 .shop::after {
@@ -79,7 +77,6 @@
   height: 30px;
   margin-left: 16px;
   border: 1px solid rgb(204, 204, 204);;
-
 }
 
 .go-chart {
@@ -96,8 +93,6 @@ header nav {
   width: 1300px;
   margin: 0 auto 24px auto;
   text-align: left;
-
-
 }
 
 
@@ -127,7 +122,6 @@ header li:first-child {
 
 header nav .selected {
   font-size: 14px;
-  /* font-weight: bold; */
   height: 21px;
   line-height: 22px;
   letter-spacing: 1.27px;
@@ -245,7 +239,6 @@ h1 {
   color: rgb(125, 125, 125);
   font-family: ProximaNovaCond, sans-serif;
   font-size: 16px;
-
 }
 
 
@@ -259,7 +252,6 @@ figcaption {
   font-size: 15px;
   line-height: 21px;
   color: rgb(125, 125, 125);
-  /* text-align: left; */
   font-style: normal;
   font-weight: normal;
 }
@@ -276,8 +268,6 @@ p {
   font-style: normal;
   color: #222;
   width: 636px;
-  /* text-rendering: optimizeLegibility; */
-
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1.25rem;

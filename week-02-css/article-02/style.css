@@ -141,7 +141,7 @@
   width: 720px;
 }
 
-figcaption{
+figcaption {
   margin-top: 10px;
 }
 
@@ -156,21 +156,22 @@ figcaption{
   margin-right: 7px;
 }
 
-.caption-2{
+.caption-2 {
   color: #888;
   text-align: left;
   font-size: 0.8125rem;
   color: #888;
-  font-family: nyt-imperial,georgia,'times new roman',times,serif;
+  font-family: nyt-imperial, georgia, 'times new roman', times, serif;
   line-height: 1.125rem;
 }
+
 .author {
   width: 600px;
   margin-top: 43px;
   margin-bottom: 25px;
 }
 
-.author>span{
+.author>span {
   display: inline-block;
   height: 20px;
   margin-bottom: 15px;
@@ -182,34 +183,29 @@ figcaption{
   letter-spacing: 0.02em;
 }
 
-.author>div{
+.author>div {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.author>div>span{
-  font-family: nyt-franklin,helvetica,arial,sans-serif;
+.author>div>span {
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
   font-weight: 500;
   color: #333;
   font-size: 0.8125rem;
   line-height: 1rem;
 }
-.author a{
+
+.author a {
   text-decoration: none;
 }
-.author ul{
-  
-  /* display: flex; */
-  /* justify-content: center; */
-  /* align-content: flex-start; */
-}
 
-.author li{
+.author li {
   display: inline;
 }
 
-.media-btn{
+.media-btn {
   display: inline-block;
   height: 15px;
   vertical-align: middle;
@@ -224,7 +220,7 @@ figcaption{
   margin-right: 10px;
 }
 
-.media-paper{
+.media-paper {
   display: inline-block;
   height: 15px;
   vertical-align: middle;
@@ -235,29 +231,31 @@ figcaption{
 
   margin-right: 10px;
 }
+
 li {
   width: 20px
 }
-.comments{
-  -webkit-box-align: center;
-    align-items: center;
-    background: transparent;
-    border: 1px solid rgb(102, 102, 102);
-    border-radius: 4px;
-    display: inline-block;
-    -webkit-box-pack: center;
-    text-align: center;
-    min-width: 26px;
-    min-height: 14px;
-    padding: 4px;
-    position: relative;
-    width: auto;
 
-    font-size: 0.75rem;
-    line-height: 0.75rem;
+.comments {
+  -webkit-box-align: center;
+  align-items: center;
+  background: transparent;
+  border: 1px solid rgb(102, 102, 102);
+  border-radius: 4px;
+  display: inline-block;
+  -webkit-box-pack: center;
+  text-align: center;
+  min-width: 26px;
+  min-height: 14px;
+  padding: 4px;
+  position: relative;
+  width: auto;
+
+  font-size: 0.75rem;
+  line-height: 0.75rem;
 }
 
-.comments::after{
+.comments::after {
   border-color: rgb(102, 102, 102) transparent;
   border-style: solid;
   bottom: -7px;
@@ -269,7 +267,7 @@ li {
   width: 0px;
 }
 
-.comments::before{
+.comments::before {
   border-color: rgb(255, 255, 255) transparent;
   border-style: solid;
   border-width: 6px 0px 0px 6px;
@@ -286,11 +284,11 @@ p {
   font-size: 1.25rem;
   line-height: 1.875rem;
   margin-bottom: 0.9375rem;
-  font-family: nyt-imperial,georgia,'times new roman',times,serif;
+  font-family: nyt-imperial, georgia, 'times new roman', times, serif;
 }
 
-.p-link{
-  font-family: nyt-imperial,georgia,'times new roman',times,serif;
+.p-link {
+  font-family: nyt-imperial, georgia, 'times new roman', times, serif;
   text-decoration: underline;
   font-size: inherit;
 }
