@@ -22,3 +22,6 @@ Copy the style of the previuos article and a new one.
 Create a responsive web for a newspaper using Mobile First approach.
 * A [normalizer](https://necolas.github.io/normalize.css/) was used to remove browser's own aesthetic in HTML tags.
 Live demo [here](https://wgnr.github.io/radium-rocket-trainig/week-03-css-responsive/).
+
+## Week 04 - JS
+Resolve some excersives, answers [here](./week-04-js/responses.js).
