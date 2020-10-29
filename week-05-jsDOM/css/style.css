@@ -1,0 +1,268 @@
+/*
+BREAK POINTS :
+- 480px: Mobile
+- 768px: Tablet
+- 1279px: Laptops
+*/
+* {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+body {
+  background-color: #eee;
+}
+
+/* HEADER */
+
+.container {
+  width: calc(100% - 32px);
+  max-width: 1280px;
+  min-width: 280px;
+  margin: 0 auto;
+}
+
+.flex-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header {
+  padding: 8px 0px;
+  border-bottom: thick double #00000069;
+}
+
+.icons {
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+}
+
+.hamburger {
+  background-image: url("../assets/img/ham.png");
+}
+
+.section-list {
+  display: none;
+  justify-content: space-evenly;
+  padding-left: 0px;
+}
+
+
+.magnifying-lens {
+  background-image: url("../assets/img/magnifying-glass.png");
+
+}
+
+.newspaper-name {
+  font-weight: 700;
+  font-size: x-large;
+  padding: 8px 0px;
+}
+
+.section-list li {
+  list-style: none;
+}
+
+.weather-time {
+  flex: 100%;
+  text-align: center;
+}
+
+.section-list a {
+  text-decoration: none;
+
+}
+
+.section-list a:link {
+  color: #161610;
+}
+
+.section-list a:visited {
+  color: #1f1f17da;
+}
+
+.section-list a:hover {
+  color: #ffffff;
+  background-color: #161610;
+}
+
+/* **** */
+/* BODY */
+.flex-body {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.news {
+  text-align: center;
+}
+
+.news h1,
+.news h2,
+.news p {
+  word-wrap: break-word;
+  margin-right: 8px;
+  margin-left: 8px;
+}
+
+.news p {
+  text-align: justify;
+  margin-bottom: 4px;
+}
+
+.news>.image {
+  width: 100%;
+  height: 256px;
+  object-fit: cover;
+  min-height: 40vh;
+  max-height: 60vh;
+}
+
+.primary {
+  font-weight: 700;
+  margin-right: 0px;
+}
+
+.primary h1 {
+  color: red;
+  font-size: xx-large;
+}
+
+.primary p {
+  font-size: large;
+}
+
+.primary .image {}
+
+/* ****** */
+/* FOOTER */
+footer {
+  margin-top: 16px;
+  padding: 8px 0px;
+  border-top: thick double #00000069;
+
+  text-align: center;
+}
+
+.copyright {
+  font-style: oblique;
+}
+
+footer .section-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+footer .section-list li {
+  margin-right: 16px;
+}
+
+
+
+/* ************* */
+/* MEDIA QUERIES */
+@media screen and (min-width: 600px) {
+
+  /* ****** */
+  /* HEADER */
+  .flex-header {
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    position: relative;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  .newspaper-name {
+    order: 0;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .magnifying-lens {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+  }
+
+  .weather-time {
+    order: 1;
+  }
+
+  header nav {
+    order: 2;
+  }
+
+  header .section-list {
+    display: flex;
+  }
+
+  /* **** */
+  /* BODY */
+  .flex-body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+  }
+
+  article {
+    margin-right: 8px;
+  }
+
+  .news {
+    flex: 41% 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .news .image {
+    max-height: 343px;
+  }
+
+  .primary>.image {
+    height: 60vh;
+  }
+
+  .secondary>.image {
+    height: auto;
+  }
+
+  .primary {
+    flex: 100%;
+  }
+
+  /* ****** */
+  /* FOOTER */
+
+}
+
+@media screen and (min-width: 1024px) {
+
+  /* **** */
+  /* BODY */
+  .news {
+    flex: 31% 0;
+  }
+
+  .primary {
+    flex: 60% 1;
+    margin-right: 8px;
+  }
+
+  .primary>.image {
+    height: 60vh;
+  }
+}

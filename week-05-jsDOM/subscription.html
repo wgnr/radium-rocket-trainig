@@ -4,14 +4,37 @@
     <meta charset="UTF-8" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- Imprts -->
-    <link rel="stylesheet" href="./subscription.css" />
+    <meta name="author" content="Juan Wagner">
+    <meta name="description" content="Responsive website for a Newspaper">
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/subscription.css" />
 
     <title>Subscribe!</title>
   </head>
 
   <body>
+    <header class="container flex-header">
+      <nav>
+        <div class="icons hamburger"></div>
+        <ul class="section-list">
+          <li><a href="#">World</a></li>
+          <li><a href="#">Politics</a></li>
+          <li><a href="#">Science</a></li>
+          <li><a href="#">Opinion</a></li>
+          <li><a href="#">Business</a></li>
+        </ul>
+      </nav>
+      <span class="newspaper-name">Newspaper's Name</span>
+      <div class="icons magnifying-lens"></div>
+      <div class="weather-time">
+        Fecha: <time datetime="2020-10-21 18:30">21 de Octubre del 2020</time>
+      </div>
+    </header>
+
     <form
       class="subscribe-form"
       action=""
@@ -168,11 +191,25 @@
           </label>
         </div>
         <div class="btns-container">
-          <input type="submit" value="Enviar" class="i-send-btn" />
+          <input type="submit" value="Send" class="i-send-btn" />
         </div>
       </div>
     </form>
-
-    <script src="./subscription.js"></script>
-  </body>
-</html>
+<div class="container">
+    <footer>
+      <span class="copyright">
+        &copy;2020 Newspaper's Name
+      </span>
+      <nav>
+        <ul class="section-list">
+          <li><a href="#">World</a></li>
+          <li><a href="#">Politics</a></li>
+          <li><a href="#">Science</a></li>
+          <li><a href="#">Opinion</a></li>
+          <li><a href="#">Business</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </div>
+  <script src="./js/subscription.js"></script>
+</body>
