@@ -1,11 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Subscribe!</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Imprts -->
+    <link rel="stylesheet" href="./subscription.css" />
+
+    <title>Subscribe!</title>
+  </head>
+
+  <body>
+    <form
+      class="subscribe-form"
+      action=""
+      method="post"
+      onsubmit="handleOnSubmit(event)"
+    >
+      <div class="form-container">
+        <div class="inputs-container">
+          <!-- FULL NAME -->
+          <label for="i-full-name" class="input-component">
+            <span class="input-title">full name:</span>
+            <input
+              onclick="handleHideError(event)"
+              onblur="handleValidateInput(event)"
+              type="text"
+              class="input-component"
+              id="i-full-name"
+              placeholder="ex. Pedro Pedrines"
+            />
+            <span class="input-error-message">
+              6 characters min, with at least 1 space in between
+            </span>
+          </label>
+          <!-- EMAIL -->
+          <label for="i-email" class="input-component">
+            <span class="input-title">email:</span>
+            <input
+              onclick="handleHideError(event)"
+              onblur="handleValidateInput(event)"
+              type="email"
+              class="input-component"
+              id="i-email"
+              placeholder="ex. PePedrines@RR.com.ar"
+              autocomplete="username"
+            />
+            <span class="input-error-message">Invalid email</span>
+          </label>
+          <!-- PASSWORD -->
+          <label for="i-password" class="input-component">
+            <span class="input-title">password:</span>
+            <input
+              onclick="handleHideError(event)"
+              onblur="handleValidateInput(event)"
+              type="password"
+              class="input-component"
+              id="i-password"
+              placeholder="ex. AABxj2dfQ#"
+              autocomplete="new-password"
+            />
+            <span class="input-error-message"
+              >8 charzacters min, numbers and letters only and match with repeat
+              password</span
+            >
+          </label>
+          <!-- REPEAT PASSWORD -->
+          <label for="i-repeat-password" class="input-component">
+            <span class="input-title">repeat password:</span>
+            <input
+              onclick="handleHideError(event)"
+              onblur="handleValidateInput(event)"
+              type="password"
+              class="input-component"
+              id="i-repeat-password"
+              placeholder="... repeat password !"
+              autocomplete="new-password"
+            />
+            <span class="input-error-message"
+              >8 characters min, numbers and letters only and match with
+              password</span
+            >
+          </label>
+          <!-- AGE -->
+          <label for="i-age" class="input-component">
+            <span class="input-title">age:</span>
+            <input
+              onclick="handleHideError(event)"
+              onblur="handleValidateInput(event)"
+              type="number"
+              class="input-component"
+              id="i-age"
+              placeholder="ex. 47"
+            />
+            <span class="input-error-message">integer greater than 18</span>
+          </label>
+          <!-- PHONE -->
+          <label for="i-phone" class="input-component">
+            <span class="input-title">phone:</span>
+            <input
+              onclick="handleHideError(event)"
+              onblur="handleValidateInput(event)"
+              type="tel"
+              class="input-component"
+              id="i-phone"
+              placeholder="ex. +5493416541500"
+            />
+            <span class="input-error-message"
+              >7 digits min and don't use spaces " ", dashes "-" or parenthesis
+              "()"
+            </span>
+          </label>
+          <!-- ADDRESS -->
+          <label for="i-address" class="input-component">
+            <span class="input-title">address:</span>
+            <input
+              onclick="handleHideError(event)"
+              onblur="handleValidateInput(event)"
+              type="text"
+              class="input-component"
+              id="i-address"
+              placeholder="ex. Ocampo 2878 1 A"
+            />
+            <span class="input-error-message"
+              >5 characters min with letters, numbers and a space " ".</span
+            >
+          </label>
+          <!-- CITY -->
+          <label for="i-city" class="input-component">
+            <span class="input-title">city:</span>
+            <input
+              onclick="handleHideError(event)"
+              onblur="handleValidateInput(event)"
+              type="text"
+              class="input-component"
+              id="i-city"
+              placeholder="ex. Rosario"
+            />
+            <span class="input-error-message">3 characters min</span>
+          </label>
+          <!-- ZIP -->
+          <label for="i-zip" class="input-component">
+            <span class="input-title">zip:</span>
+            <input
+              onclick="handleHideError(event)"
+              onblur="handleValidateInput(event)"
+              type="text"
+              class="input-component"
+              id="i-zip"
+              placeholder="ex. C-2000"
+            />
+            <span class="input-error-message">3 characters min</span>
+          </label>
+          <!-- ID -->
+          <label for="i-id" class="input-component">
+            <span class="input-title">id:</span>
+            <input
+              onclick="handleHideError(event)"
+              onblur="handleValidateInput(event)"
+              type="text"
+              class="input-component"
+              id="i-id"
+              placeholder="ex. 24158742"
+            />
+            <span class="input-error-message">7 or 8 digits</span>
+          </label>
+        </div>
+        <div class="btns-container">
+          <input type="submit" value="Enviar" class="i-send-btn" />
+        </div>
+      </div>
+    </form>
+
+    <script src="./subscription.js"></script>
+  </body>
 </html>

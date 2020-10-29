@@ -1,0 +1,54 @@
+body{
+  background-color: burlywood;
+}
+
+.subscribe-form .form-container {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+}
+
+.subscribe-form .input-component {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.subscribe-form .input-title {
+  text-transform: capitalize;
+}
+
+.subscribe-form .input-component {
+
+  /* font-size: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis; */
+
+  margin-bottom: 0.5rem;
+}
+
+.subscribe-form .input-error-message {
+  display: none;
+}
+
+.subscribe-form .show{
+  display: inline;
+}
+
+.subscribe-form .btns-container {
+  text-align: center;
+}
+
+
+
+
+/* @media (min-width:600px){
+
+
+  .subscribe-form .input-error-message {
+    height: 2.2rem;
+  
+    overflow: hidden;
+    text-overflow: ellipsis;  
+  }
+} */
