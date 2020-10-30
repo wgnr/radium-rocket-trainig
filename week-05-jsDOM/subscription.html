@@ -34,7 +34,7 @@
         Fecha: <time datetime="2020-10-21 18:30">21 de Octubre del 2020</time>
       </div>
     </header>
-
+    <h2 class="subscribe-title">Subscribe to the newspaper!</h2>
     <form
       class="subscribe-form"
       action=""
@@ -42,13 +42,15 @@
       onsubmit="handleOnSubmit(event)"
     >
       <div class="form-container">
+        <span class="form-name">Hi</span>
         <div class="inputs-container">
           <!-- FULL NAME -->
-          <label for="i-full-name" class="input-component">
+          <label for="i-full-name" class="input-label">
             <span class="input-title">full name:</span>
             <input
               onclick="handleHideError(event)"
               onblur="handleValidateInput(event)"
+              oninput="handleUpdateFormName(event)"
               type="text"
               class="input-component"
               id="i-full-name"
@@ -59,7 +61,7 @@
             </span>
           </label>
           <!-- EMAIL -->
-          <label for="i-email" class="input-component">
+          <label for="i-email" class="input-label">
             <span class="input-title">email:</span>
             <input
               onclick="handleHideError(event)"
@@ -73,7 +75,7 @@
             <span class="input-error-message">Invalid email</span>
           </label>
           <!-- PASSWORD -->
-          <label for="i-password" class="input-component">
+          <label for="i-password" class="input-label">
             <span class="input-title">password:</span>
             <input
               onclick="handleHideError(event)"
@@ -90,7 +92,7 @@
             >
           </label>
           <!-- REPEAT PASSWORD -->
-          <label for="i-repeat-password" class="input-component">
+          <label for="i-repeat-password" class="input-label">
             <span class="input-title">repeat password:</span>
             <input
               onclick="handleHideError(event)"
@@ -107,7 +109,7 @@
             >
           </label>
           <!-- AGE -->
-          <label for="i-age" class="input-component">
+          <label for="i-age" class="input-label">
             <span class="input-title">age:</span>
             <input
               onclick="handleHideError(event)"
@@ -120,7 +122,7 @@
             <span class="input-error-message">integer greater than 18</span>
           </label>
           <!-- PHONE -->
-          <label for="i-phone" class="input-component">
+          <label for="i-phone" class="input-label">
             <span class="input-title">phone:</span>
             <input
               onclick="handleHideError(event)"
@@ -136,7 +138,7 @@
             </span>
           </label>
           <!-- ADDRESS -->
-          <label for="i-address" class="input-component">
+          <label for="i-address" class="input-label">
             <span class="input-title">address:</span>
             <input
               onclick="handleHideError(event)"
@@ -151,7 +153,7 @@
             >
           </label>
           <!-- CITY -->
-          <label for="i-city" class="input-component">
+          <label for="i-city" class="input-label">
             <span class="input-title">city:</span>
             <input
               onclick="handleHideError(event)"
@@ -164,7 +166,7 @@
             <span class="input-error-message">3 characters min</span>
           </label>
           <!-- ZIP -->
-          <label for="i-zip" class="input-component">
+          <label for="i-zip" class="input-label">
             <span class="input-title">zip:</span>
             <input
               onclick="handleHideError(event)"
@@ -177,7 +179,7 @@
             <span class="input-error-message">3 characters min</span>
           </label>
           <!-- ID -->
-          <label for="i-id" class="input-component">
+          <label for="i-id" class="input-label">
             <span class="input-title">id:</span>
             <input
               onclick="handleHideError(event)"

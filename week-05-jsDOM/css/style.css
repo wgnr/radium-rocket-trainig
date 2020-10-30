@@ -8,8 +8,17 @@ BREAK POINTS :
   font-family: 'Noto Sans JP', sans-serif;
 }
 
+/*COLOR*/
+:root {
+  --grey: #eee;
+  --black: #00000069;
+  --link: #161610;
+  --link-text-visited: #1f1f17da;
+  --link-text-hover: #fff;
+}
+
 body {
-  background-color: #eee;
+  background-color: var(--grey);
 }
 
 /* HEADER */
@@ -30,7 +39,7 @@ body {
 
 header {
   padding: 8px 0px;
-  border-bottom: thick double #00000069;
+  border-bottom: thick double var(--black);
 }
 
 .icons {
@@ -76,16 +85,17 @@ header {
 }
 
 .section-list a:link {
-  color: #161610;
+  color: var(--link);
 }
 
 .section-list a:visited {
-  color: #1f1f17da;
+  color: var(--link-text-visited);
 }
 
 .section-list a:hover {
-  color: #ffffff;
-  background-color: #161610;
+  color: var(--link-text-hover);
+  ;
+  background-color: var(--link);
 }
 
 /* **** */
@@ -139,10 +149,45 @@ header {
 
 /* ****** */
 /* FOOTER */
+.container .subscribe {
+  width: 100%;
+  text-align: center;
+
+  margin-top: 32px;
+  margin-bottom: 32px;
+
+  padding-top: 24px;
+  border-top: thick double var(--black);
+}
+
+.subscribe>a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: x-large;
+
+  padding: 2px 8px;
+
+}
+
+.subscribe>a:link {
+  color: var(--link);
+}
+
+.subscribe>a:visited {
+  color: var(--link-text-visited);
+}
+
+.subscribe>a:hover {
+  color: var(--link-text-hover);
+  ;
+  background-color: var(--link);
+}
+
+
 footer {
   margin-top: 16px;
   padding: 8px 0px;
-  border-top: thick double #00000069;
+  border-top: thick double var(--black);
 
   text-align: center;
 }

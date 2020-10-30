@@ -1,54 +1,85 @@
-body{
-  background-color: burlywood;
+.subscribe-title {
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .subscribe-form .form-container {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center; */
+  min-width: 300px;
+  width: calc(100% - 32px);
+  margin: 0 auto;
+
+  max-width: 900px;
 }
 
-.subscribe-form .input-component {
+.subscribe-form .form-name {
+  display: block;
+  text-align: center;
+
+  margin: 0.7rem 0;
+}
+
+.subscribe-form .input-label {
+  margin-bottom: 0.5rem;
+
   display: flex;
   flex-direction: column;
 }
 
 
 .subscribe-form .input-title {
+  margin-bottom: 0.2rem;
   text-transform: capitalize;
-}
-
-.subscribe-form .input-component {
-
-  /* font-size: 1rem;
-  overflow: hidden;
-  text-overflow: ellipsis; */
-
-  margin-bottom: 0.5rem;
 }
 
 .subscribe-form .input-error-message {
   display: none;
+
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+  color: tomato;
+
+  font-size: small;
 }
 
-.subscribe-form .show{
+.subscribe-form .show {
   display: inline;
 }
 
 .subscribe-form .btns-container {
   text-align: center;
+  margin: 1rem 0;
 }
 
 
-
-
-/* @media (min-width:600px){
-
-
-  .subscribe-form .input-error-message {
-    height: 2.2rem;
-  
-    overflow: hidden;
-    text-overflow: ellipsis;  
+@media (min-width:600px) {
+  .subscribe-title {
+    margin-top: 4rem;
   }
-} */
+
+  .subscribe-form {
+    padding: 16px;
+    margin: 0 auto 4rem auto;
+  }
+
+  .subscribe-form .form-name{
+    margin-top: 2rem;
+    font-size: x-large;
+    text-transform: uppercase;
+  }
+
+  .form-container {
+    border: thick double var(--black);
+    border-radius: 8px;
+  }
+
+  .subscribe-form .inputs-container {
+    padding: 16px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .subscribe-form .input-label {
+    flex: 40%;
+    margin: 1rem 1rem;
+  }
+}

@@ -5,7 +5,6 @@
   inputDOM: input reference to DOM based on its id
   errorMesageDOM: error message reference to DOM based on its id
 */
-
 const formDataStructure = [
   {
     // FULL NAME
@@ -94,16 +93,24 @@ function handleOnSubmit(event) {
   event.preventDefault();
 
   // Evaluate every restriction...
-  let abort = false;
+  const errorMessages = [];
   for (let i = 0; i < formDataStructure.length; i++) {
     const input = formDataStructure[i];
 
     const isValidationFailed = input.checkValidationFails(input.inputDOM.value);
 
-    // Show/remove error message
-    input.errorMesageDOM.classList.toggle("show", isValidationFailed);
+    if (isValidationFailed) {
+      // Show error message
+      input.errorMesageDOM.classList.add("show");
 
-    if (isValidationFailed) abort = true;
+      // Add its error to error array
+      const label = input.inputDOM.previousElementSibling.textContent;
+      const labelError = input.errorMesageDOM.innerText;
+      errorMessages.push(label + " " + labelError);
+    } else {
+      // Hide error message
+      input.errorMesageDOM.classList.remove("show");
+    }
   }
 
   // Check if password and repeat password are the same
@@ -112,14 +119,23 @@ function handleOnSubmit(event) {
     (e) => e.id === "i-repeat-password"
   );
   if (password.inputDOM.value !== repeatPassowrd.inputDOM.value) {
-    abort = true;
     // Show error
     password.errorMesageDOM.classList.add("show");
     repeatPassowrd.errorMesageDOM.classList.add("show");
+
+    // Add its error to error array
+    const label = password.inputDOM.previousElementSibling.textContent;
+    errorMessages.push(
+      label + " " + "Password and Repeat password must be the same!"
+    );
   }
 
   // Fails
-  if (abort) return;
+  if (errorMessages.length) {
+    alert(["Some field aren't ok:", ...errorMessages].join("\n"));
+
+    return;
+  }
 
   // Success ! Form sent!
   const successMessage = ["Your subscription has been success!", "Your info:"];
@@ -152,4 +168,9 @@ function handleHideError(event) {
   if (!input) return;
 
   input.errorMesageDOM.classList.remove("show");
+}
+
+const formNameDOM = document.querySelector(".form-name");
+function handleUpdateFormName(event) {
+  formNameDOM.innerHTML = ("Hi " + event.target.value).trim();
 }
