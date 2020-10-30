@@ -25,3 +25,6 @@ Live demo [here](https://wgnr.github.io/radium-rocket-trainig/week-03-css-respon
 
 ## Week 04 - JS
 Resolve some excersives, answers [here](./week-04-js/).
+
+## Week 05 - JS DOM
+Newspaper with subscription can be found [here](./week-05-jsDOM/index.html)
