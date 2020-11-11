@@ -28,3 +28,12 @@ Resolve some excersives, answers [here](./week-04-js/).
 
 ## Week 05 - JS DOM
 Newspaper with subscription can be found [here](https://wgnr.github.io/radium-rocket-trainig/week-05-jsDOM/)
+
+## Week 06 - JS POO + Async
+The Snake game is taken from [this manual](./week-06-js-poo-sync/x01-JCN-Snake.pdf).
+We have to add a simple bonus food to earn extra points and then do a little fetch to "post" the score.
+
+To play:
+* Move snake: `⬆`,`➡`,`⬅`,`⬇`
+* Start/Resume Game: `↩`
+[Link to game!](https://wgnr.github.io/radium-rocket-trainig/week-06-js-poo-sync/)
