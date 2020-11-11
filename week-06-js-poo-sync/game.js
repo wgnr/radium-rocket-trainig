@@ -24,7 +24,6 @@
     posHighscore = 10,
     dir = 0,
     score = 0,
-    showRequestStatus = false, // Display HTTP request result
     showBonus = false, // Display bonus in screen
     iBody = new Image(),
     iFood = new Image(),
@@ -271,12 +270,6 @@
     ctx.fillStyle = "#fff";
     ctx.textAlign = "right";
     ctx.fillText("Score: " + score, canvas.width - 10, 10);
-
-    // Draw Update
-    if (showRequestStatus) {
-      ctx.textAlign = "right";
-      ctx.fillText(showRequestStatus, canvas.width - 10, canvas.height - 10);
-    }
     ctx.textAlign = "left";
 
     // Debug last key pressed
@@ -286,9 +279,9 @@
     if (pause) {
       ctx.textAlign = "center";
       if (gameover) {
-        ctx.fillText("GAME OVER", canvas.width/2, canvas.height/2);
+        ctx.fillText("GAME OVER", canvas.width / 2, canvas.height / 2);
       } else {
-        ctx.fillText("PAUSE", canvas.width/2, canvas.height/2);
+        ctx.fillText("PAUSE", canvas.width / 2, canvas.height / 2);
       }
     }
   };
@@ -444,17 +437,13 @@
         `https://www.jsonplaceholder.com/?score=${score}`
       );
       const response = await request.json();
-      if (!response.ok) throw new Error("Error in HTTP request.");
+      if (!response.ok) throw new Error();
 
       // Success!
-      showRequestStatus = "Score Updated!";
+      console.log("Score sent successfully");
     } catch (e) {
       // Failure !!
-      showRequestStatus = "Score update failure :(";
-    } finally {
-      setTimeout(() => {
-        showRequestStatus = false;
-      }, 800);
+      console.log("Error trying to send the score");
     }
   }
 })(window);
