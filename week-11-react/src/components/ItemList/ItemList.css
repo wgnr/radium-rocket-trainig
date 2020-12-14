@@ -1,0 +1,23 @@
+table {
+  width: 100%;
+}
+
+table,
+th,
+td {
+  border-collapse: collapse;
+}
+
+thead {
+  border-bottom: 1px solid var(--grey);
+}
+
+tbody tr {
+  border-bottom: 1px solid var(--grey);
+}
+
+
+.th {
+  color: var(--base-color);
+  padding: 0.5rem 0;
+}
