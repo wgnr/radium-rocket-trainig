@@ -7,11 +7,18 @@ class Item extends React.Component {
     const { item } = this.props;
     return (
       <tr>
-        <td className="td td-name">{item.name}</td>
+        <td className="td td-name">{item.full_name}</td>
         <td className="td td-id">{item.id}</td>
         <td className="td td-email">{item.email}</td>
-        <td className="td td-name">{item.expertise}</td>
-        <td className="td td-name">Botones</td>
+        <td className="td td-name">{item.expertise.join(", ")}</td>
+        <td className="td td-name">
+          <button onClick={() => this.props.editTechnician(item)}>
+            ✏
+          </button>
+          <button onClick={() => this.props.removeTechnician(item.id)}>
+            ❌
+          </button>
+        </td>
       </tr>
     );
   }

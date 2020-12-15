@@ -3,26 +3,11 @@ import ItemList from "../ItemList/ItemList";
 
 import "./ItemContainer.css";
 
-const data = [
-  {
-    name: "Juancito",
-    id: 123,
-    email: "j@dsdf.com",
-    expertise: ["A", "C", "B"],
-    // actions: ,
-  },
-  {
-    name: "Juancito",
-    id: 12313,
-    email: "j@dsdf.com",
-    expertise: ["A", "C", "B"],
-    // actions: ,
-  },
-];
 class ItemContainer extends React.Component {
+ 
   handleSearch = (e) => {
-    const text = e.target.value;
-    if (!text) return "";
+    const text = e.target.value.toLowerCase();
+    this.props.filterTechnician(text);
   };
 
   render() {
@@ -35,7 +20,11 @@ class ItemContainer extends React.Component {
             onChange={this.handleSearch}
           />
         </div>
-        <ItemList items={data} />
+        <ItemList
+          items={this.props.technicians}
+          removeTechnician={this.props.removeTechnician}
+          editTechnician={this.props.editTechnician}
+        />
       </div>
     );
   }

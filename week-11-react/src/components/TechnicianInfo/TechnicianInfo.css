@@ -1,0 +1,43 @@
+.blockScreen {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #00000077;
+  user-select: none;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.techInfo {
+  width: 600px;
+  height: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background-color: white;
+
+
+  padding: 3rem;
+  /* z-index: 10; */
+}
+
+.techInfo form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.checkboxes label {
+  margin-left: 0.4rem;
+
+}

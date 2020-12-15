@@ -18,7 +18,12 @@ class ItemList extends React.Component {
         </thead>
         <tbody>
           {this.props.items.map((item) => (
-            <Item key={item.id} item={item} />
+            <Item
+              key={item.id}
+              item={item}
+              removeTechnician={this.props.removeTechnician}
+              editTechnician={this.props.editTechnician}
+            />
           ))}
         </tbody>
       </table>
