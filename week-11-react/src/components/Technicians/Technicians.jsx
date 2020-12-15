@@ -102,18 +102,7 @@ class Technicians extends React.Component {
           removeTechnician={this.removeTechnician}
           editTechnician={this.showEditTechnician}
         />
-        <button
-          className="addNewTech"
-          onClick={this.showAddNew}
-          // onClick={this.editTechnician.bind(this, {
-          //   id: 1,
-          //   full_name: "XXXXXXXXXXXXXXXXXX",
-          //   email: "rmicklewicz0@nyu.edu",
-          //   address: "8 Independence Pass",
-          //   phone: "+55 107 736 3535",
-          //   expertise: ["B", "D", "C", "A"],
-          // })}
-        >
+        <button className="addNewTech" onClick={this.showAddNew}>
           +
         </button>
         {this.state.showAddNewTechnician && (
@@ -129,14 +118,6 @@ class Technicians extends React.Component {
             title="Edit technician"
             handleClose={this.closeEditTechnician}
             intialData={this.state.technicianToEdit}
-            // intialData={{
-            //   id: 1,
-            //   full_name: "XXXXXXXXXXXXXXXXXX",
-            //   email: "rmicklewicz0@nyu.edu",
-            //   address: "8 Independence Pass",
-            //   phone: "+55 107 736 3535",
-            //   expertise: ["B", "D", "C", "A"],
-            // }}
           />
         )}
       </div>
